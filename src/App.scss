@@ -1,0 +1,7 @@
+/* ------------------------------- PARTIAL IMPORTS ------------------------------- */
+@use "./styles/partials/reset";
+@use "./styles/partials/fonts";
+@use "./styles/partials/colors" as *;
+@use "./styles/partials/breakpoints" as bp;
+@use "./styles/partials/typography" as tp;
+@use "./styles/partials/mixins" as mx;

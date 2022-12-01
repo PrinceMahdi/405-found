@@ -1,0 +1,71 @@
+/* ------------------------------- SMALL DEVICE TYPOGRAPHY ------------------------------- */
+@mixin small-page-header() {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+@mixin small-sub-header() {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@mixin small-auxiliary() {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+@mixin small-table-header() {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+}
+
+@mixin small-body-large() {
+  font-size: 0.9375rem;
+  line-height: 1.625rem;
+}
+
+@mixin small-body-medium() {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+
+@mixin small-body-small() {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+}
+
+/* ------------------------------- LARGE DEVICE TYPOGRAPHY ------------------------------- */
+@mixin large-page-header() {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+@mixin large-sub-header() {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@mixin large-auxiliary() {
+  font-size: 1.2rem;
+  line-height: 1.375rem;
+}
+
+@mixin large-table-header() {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
+@mixin large-body-large() {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+@mixin large-body-medium() {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+
+@mixin large-body-small() {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}

@@ -1,0 +1,163 @@
+/* ------------- PARTIAL IMPORTS ------------- */
+@use "./colors" as *;
+@use "./breakpoints" as bp;
+
+/* ------------- MIXIN FOR PADDING ------------- */
+
+@mixin padding {
+  transition: 0.3s ease;
+  @include bp.small {
+    padding: 0 1rem;
+  }
+  @include bp.medium {
+    padding: 0 3rem;
+  }
+  @include bp.large {
+    padding: 0 5rem;
+  }
+}
+
+/* ------------- MIXIN FOR BUTTON STYLING ------------- */
+// Primary Button
+@mixin btn-primary {
+  color: $primary-light;
+  background-color: $primary-dark;
+  border: 1px solid $primary-dark;
+  border-radius: 0.25rem;
+  transition: 0.2s ease;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+// Primary Button Hover
+@mixin btn-primary-hover {
+  color: $primary-dark;
+  border: 1px solid $primary-dark;
+  background-color: $primary-light;
+  border-radius: 0.25rem;
+  transition: 0.3s ease;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+// Secondary Button
+@mixin btn-secondary {
+  color: $primary-dark;
+  border: 1px solid $primary-dark;
+  background-color: $primary-light;
+  border-radius: 0.25rem;
+  transition: 0.3s ease;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+// Secondary Button Hover
+@mixin btn-secondary-hover {
+  color: $primary-light;
+  background-color: $primary-dark;
+  border: 1px solid $primary-dark;
+  border-radius: 0.25rem;
+  transition: 0.3s ease;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+// Delete Button
+@mixin delete-primary {
+  color: $primary-light;
+  background-color: $primary-dark;
+  border: 1px solid $primary-dark;
+  border-radius: 1.25rem;
+  transition: 0.3s ease;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+// Delete Button Hover
+@mixin delete-primary-hover {
+  background-color: $background-dark;
+  border: 1px solid $background-dark;
+}
+// Delete Button Mobile
+@mixin delete-primary-mobile {
+  color: $primary-light;
+  background-color: $primary-dark;
+  border: 1px solid $primary-dark;
+  border-radius: 1.25rem;
+  transition: 0.3s ease;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+}
+
+// Box Shadow
+@mixin boxShadow {
+  box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.1);
+}
+
+// text animation
+@mixin textAnimation {
+  background: #ff512f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dd2476,
+    #ff512f,
+    #f09819,
+    #e55d87,
+    #9733ee,
+    #d31027,
+    #02aab0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dd2476,
+    #ff512f,
+    #f09819,
+    #e55d87,
+    #9733ee,
+    #d31027,
+    #02aab0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-position: -100%;
+  background-size: 300%;
+  animation: animatedText 3s infinite alternate-reverse;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @keyframes animatedText {
+    from {
+      background-position: 0%;
+    }
+    to {
+      background-position: 100%;
+    }
+  }
+}
+
+// wavy underline
+@mixin textDecoration {
+  text-decoration: underline wavy $primary-semi-light;
+  text-decoration-thickness: 3px;
+}
+
+// border color animation
+@mixin borderAnimation {
+  border: 2px solid #ff1493;
+  animation: color-change 2s linear infinite;
+
+  @keyframes color-change {
+    0%,
+    100% {
+      border-color: #dd2476;
+    }
+
+    25% {
+      border-color: #ff512f;
+    }
+
+    50% {
+      border-color: #f09819;
+    }
+
+    75% {
+      border-color: #02aab0;
+    }
+  }
+}

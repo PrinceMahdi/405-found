@@ -1,0 +1,53 @@
+/* ---------------- PARTIAL IMPORTS ---------------- */
+@use "./colors" as *;
+
+/* CSS resets */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium";
+  color: $primary-dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-dark;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: $primary-dark;
+}
+
+::placeholder,
+button {
+  font-family: "Titillium";
+  color: $primary-dark;
+}
+
+button {
+  font-weight: 600;
+}
