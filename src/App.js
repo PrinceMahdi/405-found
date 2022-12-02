@@ -6,6 +6,7 @@ import Browse from "./Pages/Browse/Browse";
 import MyCollection from "./Pages/MyCollection/MyCollection";
 import Fifa from "./Pages/Games/Fifa/Fifa";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import Modal from "./Components/Modal/Modal";
 import Profile from "./Pages/Profile/Profile";
 import NewPost from "./Pages/NewPost/NewPost";
 
@@ -14,6 +15,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Header />
+        <Modal />
         <Sidebar />
         <Routes>
           <Route path="/" element={<HomePage />} />
