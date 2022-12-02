@@ -6,7 +6,12 @@ import Browse from "./Pages/Browse/Browse";
 import MyCollection from "./Pages/MyCollection/MyCollection";
 import Fifa from "./Pages/Games/Fifa/Fifa";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import Profile from "./Pages/Profile/Profile";
 import NewPost from "./Pages/NewPost/NewPost";
+
+import NewPost from "./Pages/NewPost/NewPost";
+
+import Profile from "./Pages/Profile/Profile";
 
 const App = () => {
   return (
@@ -19,7 +24,10 @@ const App = () => {
           <Route path="/browse" element={<Browse />} />
           <Route path="/mycollection" element={<MyCollection />} />
           <Route path="/games/fifa" element={<Fifa />} />
+
           <Route path="/post" element={<NewPost />} />
+
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </>
