@@ -13,12 +13,11 @@
     display: inline-block;
     font-family: "Myriad";
     &__hero {
-            width: 46.5rem;
-            height: 24.8125rem;
             position: relative;
             display: flex;
             justify-content: right;
             text-align: right;
+            margin-right: 20px;
         }
 
     
@@ -30,10 +29,12 @@
 
 &__button-large {
     
- @include mx.btn-primary
-    
-}
+@include mx.btn-primary
 
+}
+&__button-large:hover {
+    @include mx.btn-primary-hover
+}
 
 &__button-small{
 
@@ -45,17 +46,14 @@ color: $primary-light;
     padding: 0.3rem 1rem;
     cursor: pointer;
 }
+&__button-small:hover {@include mx.btn-secondary-hover}
 
 
-
-&__hero {
-    margin-right: 20px;
-}
 
     &__image {
-        width: 46.5rem;
+        width: 48.5rem;
         height: 24.8125rem;
-        margin-left: 6.25rem;
+        margin-left: 8.25rem;
     }
 
     &__box {
