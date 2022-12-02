@@ -1,0 +1,68 @@
+/* --------------- PARTIAL IMPORTS --------------- */
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/typography" as tp;
+@use "../../styles/partials/mixins" as mx;
+
+// .warehouselist {
+//     background: #13182c;
+//     opacity: 0.9;
+//   }
+.videoPopUp {
+    padding: 1rem 0;
+    position: absolute;
+    width: 31.625rem;
+    height: 28.813rem;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $secondary-dark;
+   z-index: 999;
+
+    &__close-icon {
+    display: flex;
+    flex-direction: column;
+
+    &-close-iconWrapper {
+      padding-right: 1rem;
+      display: flex;
+      justify-content: right;
+    }
+  }
+
+    &__playIcon {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    padding:0 4rem;
+
+   
+  }
+  &__text {
+    font-size: 0.95rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+    padding: 1.5rem 4rem;
+    
+  }
+  &__btn {
+    width: 163px;
+    height: 36px;
+    border-radius: 20px;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content:flex-end;
+      padding: 1rem 4rem  0 4rem;
+    }
+    // &--save {
+      
+    // }
+    // &--start {
+      
+    // }
+  }
+  }
