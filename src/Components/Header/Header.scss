@@ -41,11 +41,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
   }
 
   .header__nav-item:nth-child(1) {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   .header__nav-item:nth-child(2),
@@ -69,7 +71,7 @@
     }
     &-menu {
       width: 10.4375rem;
-      height: calc(100vh - 1.8125rem);
+      height: 100%;
       background-color: $background-dark;
       display: flex;
       flex-direction: column;
@@ -114,3 +116,8 @@
     }
   }
 }
+
+
+
+
+

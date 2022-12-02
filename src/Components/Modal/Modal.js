@@ -1,15 +1,21 @@
 import "./Modal.scss";
+import closeIcon from "../../assets/icons/close.svg";
+import editIcon from "../../assets/icons/edit.svg";
+import downloadIcon from "../../assets/icons/download.svg";
+import shareIcon from "../../assets/icons/share.svg";
+import video from "../../assets/videos/Fifa Highlight.mp4";
 
 
 
-// function showDeleteConfirm() {
+
+// function showPopUp() {
 //     document.getElementById("videoPopUp").style.display = "block";
 //     document.getElementById("background").style.display = "block";
     
 //   }
-// showDeleteConfirm();
+// showPopUp();
 //   // click cancel icon
-//   function hideDeleteComponent() {
+//   function hidePopUp() {
 //     document.getElementById("videoPopUp").style.display = "none";
 //     document.getElementById("background").style.display = "none";
 //   }
@@ -21,26 +27,26 @@ const Modal = () => {
           <div className="videoPopUp__close-iconWrapper">
             <img
               className="videoPopUp__close-icon"
-              
+              src={closeIcon}
               alt="close-icon"
-              // onClick={() => hideDeleteComponent()}
+              // onClick={() => hidePopUpComponent()}
             />
           </div>
           <div className="videoPopUp__video-container">
-          <video width={400} height={200} controls>
-                    <source  type="video/mp4"></source>
+          <video width={448} height={270.91} controls>
+                    <source src={video} type="video/mp4"></source>
                   </video>
              
           
           </div>
           <div className="videoPopUp__text-wrapper">
             <p className="videoPopUp__text">
-              Your Highlight(12/012022)
+              Your Highlight (12/012022)
             </p>
             <div className="videoPopUp__text-image">
-                <img />
-                <img />
-                <img />
+                <img src={editIcon} className="videoPopUp__text-imageIcon"/>
+                <img src={downloadIcon} className="videoPopUp__text-imageIcon"/>
+                <img src={shareIcon} className="videoPopUp__text-imageIcon"/>
             </div>
           </div>
           <div className="videoPopUp__btn-wrapper">

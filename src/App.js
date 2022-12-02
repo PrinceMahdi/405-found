@@ -7,6 +7,7 @@ import MyCollection from "./Pages/MyCollection/MyCollection";
 import Fifa from "./Pages/Games/Fifa/Fifa";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Modal from "./Components/Modal/Modal";
+import Profile from "./Pages/Profile/Profile";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/browse" element={<Browse />} />
           <Route path="/mycollection" element={<MyCollection />} />
           <Route path="/games/fifa" element={<Fifa />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </>
