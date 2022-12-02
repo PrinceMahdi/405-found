@@ -9,6 +9,7 @@ import You from "../../assets/icons/Youtube.svg";
 import Facebook from "../../assets/icons/Facebook.svg";
 import Inst from "../../assets/icons/instagram.svg";
 import Text from "../../assets/icons/Text.svg";
+import { Link } from "react-router-dom";
 
 const NewPost = () => {
   return (
@@ -45,7 +46,6 @@ const NewPost = () => {
           </div>
           <div className="post-bottom__main">
             <div className="post-bottom__left">
-              {" "}
               <video width={440} height={270} controls>
                 <source src={Video} type="video/mp4"></source>
               </video>
@@ -68,8 +68,10 @@ const NewPost = () => {
                 ></input>
                 <input placeholder="Tags: #fifa" className="form-input"></input>
                 <div className="form-button">
-                  <button>SAVE IN DRAFT</button>
-                  <button className="post-top__button-large">SHARE</button>
+                  <button className="form-input__button">SAVE IN DRAFT</button>
+                  <Link to="/profile">
+                    <button className="post-top__button-large">SHARE</button>
+                  </Link>
                 </div>
               </form>
             </div>
