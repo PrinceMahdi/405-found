@@ -1,4 +1,5 @@
 import "./Modal.scss";
+import { NavLink } from "react-router-dom";
 import closeIcon from "../../assets/icons/close.svg";
 import editIcon from "../../assets/icons/edit.svg";
 import downloadIcon from "../../assets/icons/download.svg";
@@ -55,11 +56,14 @@ const Modal = () => {
             >
               SAVE IN DRAFT
             </button>
+            <NavLink
+            to={"/post"}>
             <button
               className="videoPopUp__btn  videoPopUp__btn--start"
             >
               START A POST
             </button>
+            </NavLink>
           </div>
         </section>
       </section>

@@ -61,6 +61,7 @@ const NewPost = () => {
                 <input
                   placeholder="Write a title..."
                   className="form-input"
+                  defaultValue="Crazy long range FIFA goal!"
                 ></input>
                 <p className="form-input__legend">
                   no more than 100 characters{" "}
@@ -68,6 +69,7 @@ const NewPost = () => {
                 <input
                   placeholder="Write a caption..."
                   className="form-input"
+                  defaultValue="I scored this banger of a goal in FIFA."
                 ></input>
                 <p className="form-input__legend">
                   no more than 250 characters

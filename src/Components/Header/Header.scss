@@ -46,8 +46,26 @@
     z-index: 9999;
   }
 
+  .bar {
+    position: static;
+  }
+
+  .navi {
+    height: 97%;
+  }
+
   .header__nav-item:nth-child(1) {
     margin-top: 3rem;
+  }
+
+  .noi {
+    display: flex;
+    align-items: center;
+    color: $primary-light;
+    border-left: 3px solid $background-dark;
+    padding: 0.7rem 1rem;
+    gap: 1rem;
+    margin-top: 1rem;
   }
 
   .header__nav-item:nth-child(2),
@@ -116,8 +134,3 @@
     }
   }
 }
-
-
-
-
-

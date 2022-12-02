@@ -1,15 +1,13 @@
 import "./Fifa.scss";
-import Fifa_background from "../../../assets/images/image 16 (2).svg";
+import Fifa from "../../../assets/images/No Play Button.svg";
 
 const ApexLegends = () => {
   return (
     <>
       <section className="fifa">
-        <img
-          src={Fifa_background}
-          alt="background image"
-          className="fifa__home-img"
-        />
+        <img src={Fifa} alt="background image" className="fifa__home-img" />
+        
+        <button className="fifa__button">Play</button>
       </section>
     </>
   );
