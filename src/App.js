@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import HomePage from "./Pages/HomePage/HomePage";
 import Browse from "./Pages/Browse/Browse";
 import MyCollection from "./Pages/MyCollection/MyCollection";
+import Fifa from "./Pages/Games/Fifa/Fifa";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/browse" element={<Browse />} />
           <Route path="/mycollection" element={<MyCollection />} />
+          <Route path="/games/fifa" element={<Fifa />} />
         </Routes>
       </BrowserRouter>
     </>
