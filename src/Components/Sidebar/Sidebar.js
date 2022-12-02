@@ -1,8 +1,9 @@
 import "./Sidebar.scss";
-// import {profileIcon} from "../../assets/icons/";
+import profileIcon from "../../assets/icons/Property 1=Variant2.svg";
 import profileplus from "../../assets/icons/Property 1=Default-1.svg";
 import userActive from "../../assets/icons/Property 1=Variant3@2x.svg";
 import userImage from "../../assets/icons/Property 1=Default@2x.svg";
+import downarrow from "../../assets/icons/Down Arrow.svg";
 
 
 
@@ -10,35 +11,35 @@ import userImage from "../../assets/icons/Property 1=Default@2x.svg";
 const friendsList=[
     {
         name:"ramblejamble24",
-        img:{userActive}
+        img:userActive,
     },
     {
         name:"variantlord",
-        img:{userActive}
+        img:userActive,
     },
     {
         name:"toole254",
-        img:{userImage}
+        img:userImage,
     },
     {
         name:"bobman52",
-        img:{userImage}
+        img:userImage,
     },
     {
         name:"HelpfulSeaLion",
-        img:{userImage}
+        img:userImage,
     },
     {
         name:"status200",
-        img:{userImage}
+        img:userImage,
     },
     {
         name:"merry50duck",
-        img:{userImage}
+        img:userImage,
     },
     {
         name:"figmaaa",
-        img:{userImage}
+        img:userImage,
     },
 ];
 
@@ -47,13 +48,13 @@ const Sidebar = () => {
   return (
     <div className="sidebar__container">
         <div className="sidebar__header">
-            <img className="sidebar__header-icon" alt="Profile icon"/>
+            <img className="sidebar__header-icon" alt="Profile icon" src={profileIcon}/>
             <p>Profile</p>
         </div>
         <div className="sidebar__user">
             <img className="sidebar__user-image" alt="user image" src={userImage}/>
             <p className="sidebar__user-name">mrwaffles55</p>
-            <img className="sidebar__user-downArrow" alt="down arrow icon"/>
+            <img className="sidebar__user-downArrow"  alt="down-arrow-icon" src={downarrow}/>
         </div>
         <div className="sidebar__friends-container">
             <div className="friends__header">
