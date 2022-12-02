@@ -7,10 +7,35 @@
 .fifa {
   margin-left: 10.4375rem;
   margin-top: -50px;
+  position: relative;
+
+  &__button {
+    @include mx.btn-primary;
+    position: absolute;
+    left: 32.5rem;
+    top: 36.375rem;
+    padding: 11px 39px;
+    min-width: 6.5625rem;
+    min-height: 40px;
+
+    &:hover {
+      padding: 11px 39px;
+      min-width: 6.5625rem;
+      min-height: 40px;
+      color: #ffffff;
+      background-color: #1e1e1e;
+      border: 1px solid #1e1e1e;
+      border-radius: 0.25rem;
+      transition: 0.3s ease;
+      padding: 0.5rem 1.5rem;
+      cursor: pointer;
+    }
+  }
 
   &__home {
     &-img {
-      width: 85%;
+      width: 86%;
+      margin-top: 3rem;
     }
   }
 }

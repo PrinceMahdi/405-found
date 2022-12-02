@@ -61,10 +61,12 @@ const NewPost = () => {
                 <input
                   placeholder="Write a title..."
                   className="form-input"
+                  defaultValue="Crazy long range FIFA goal!"
                 ></input>
                 <input
                   placeholder="Write a caption..."
                   className="form-input"
+                  defaultValue="I scored this banger of a goal in FIFA today. I think using left trigger while shooting makes the keeper confused. This is also my entry into the EA SharePlay competition to win $50. #EAApp #Shareplay #fifa"
                 ></input>
                 <input placeholder="Tags: #fifa" className="form-input"></input>
                 <div className="form-button">

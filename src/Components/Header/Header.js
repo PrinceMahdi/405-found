@@ -7,15 +7,27 @@ import Collection from "../../assets/icons/Collection.svg";
 import Download from "../../assets/icons/arrow.down.to.line.alt.svg";
 import Apex from "../../assets/images/2x/Apex Icon Left.png";
 import Fifa from "../../assets/images/2x/Fifa Icon Left.png";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
   return (
     <header className="header">
-      <div className="header__bar">
+      <div
+        className={
+          location.pathname.includes("fifa") ? "header__bar bar" : "header__bar"
+        }
+      >
         <RxHamburgerMenu size={20} color="white" className="header__icon" />
         <span className="header__logo">BETA</span>
       </div>
-      <nav className="header__nav-menu">
+      <nav
+        className={
+          location.pathname.includes("fifa")
+            ? "header__nav-menu navi"
+            : "header__nav-menu"
+        }
+      >
         <NavLink
           to={"/"}
           className={(navData) =>
