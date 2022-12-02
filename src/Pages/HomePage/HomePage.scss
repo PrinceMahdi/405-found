@@ -3,3 +3,13 @@
 @use "../../styles/partials/breakpoints" as bp;
 @use "../../styles/partials/typography" as tp;
 @use "../../styles/partials/mixins" as mx;
+
+
+
+
+.main {
+    background: #343647;
+    margin-left: 11rem;
+    margin-top: 1rem;
+    width: 100wv;
+}
