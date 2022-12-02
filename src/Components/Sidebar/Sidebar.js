@@ -41,21 +41,21 @@ const friendsList=[
 
 const Sidebar = () => {
   return (
-    <div>
-        <div>
-            <img />
-            <p></p>
+    <div className="sidebar__container">
+        <div className="sidebar__header">
+            <img className="sidebar__header-icon" alt="Profile icon"/>
+            <p>Profile</p>
         </div>
-        <div>
-            <img />
-            <p></p>
-            <img />
+        <div className="sidebar__user">
+            <img className="sidebar__user-image" alt="user image"/>
+            <p className="sidebar__user-name">mrwaffles55</p>
+            <img className="sidebar__user-downArrow" alt="down arrow icon"/>
         </div>
-        <div>
-            <div>
-                <div>
-                    <span></span>
-                    <span></span>
+        <div className="sidebar__friends-container">
+            <div className="friends__header">
+                <div className="friends__header-contentContainer">
+                    <span className="friends__header-content">Friends</span>
+                    <span className="frinds">1/8</span>
                 </div>
                 <img />
             </div>
