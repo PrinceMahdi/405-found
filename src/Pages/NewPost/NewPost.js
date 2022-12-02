@@ -63,19 +63,12 @@ const NewPost = () => {
                   className="form-input"
                   defaultValue="Crazy long range FIFA goal!"
                 ></input>
-                <p className="form-input__legend">
-                  no more than 100 characters{" "}
-                </p>
                 <input
                   placeholder="Write a caption..."
                   className="form-input"
                   defaultValue="I scored this banger of a goal in FIFA."
                 ></input>
-                <p className="form-input__legend">
-                  no more than 250 characters
-                </p>
                 <input placeholder="Tags: #fifa" className="form-input"></input>
-                <p className="form-input__legend">no more than 10 characters</p>
                 <div className="form-button">
                   <button className="form-input__button">SAVE IN DRAFT</button>
                   <Link to="/profile">
