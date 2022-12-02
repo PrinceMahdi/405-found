@@ -83,6 +83,9 @@
         transition: 0.2s ease;
         cursor: pointer;  
     }
+    &--save:hover {
+        @include mx.btn-primary-hover
+    }
     &--start {
         background-color: $primary-semi-light;
         color: $primary-light;
@@ -91,6 +94,9 @@
         transition: 0.2s ease;
         cursor: pointer;    
 
+    }
+    &--start:hover {
+        @include mx.btn-secondary-hover
     }
   }
   }
