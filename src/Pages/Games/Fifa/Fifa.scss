@@ -5,6 +5,12 @@
 @use "../../../styles/partials/mixins" as mx;
 
 .fifa {
-  margin-left: 11rem;
-  margin-top: 1rem;
+  margin-left: 10.4375rem;
+  margin-top: -50px;
+
+  &__home {
+    &-img {
+      width: 85%;
+    }
+  }
 }

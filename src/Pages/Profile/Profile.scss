@@ -1,0 +1,156 @@
+/* --------------- PARTIAL IMPORTS --------------- */
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/typography" as tp;
+@use "../../styles/partials/mixins" as mx;
+
+.profile__card:nth-of-type(1) {
+  padding-top: 1.5rem;
+}
+
+.profile__card:nth-of-type(2),
+.profile__card:nth-of-type(3),
+.profile__card:nth-of-type(4) {
+  padding-top: 1.5rem;
+}
+
+.profile {
+  h1,
+  h2,
+  h3,
+  p {
+    color: $primary-light;
+  }
+
+  &__card {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid $primary-light;
+    padding-bottom: 1.5rem;
+    border-right: 1px solid $primary-light;
+    padding-right: 1rem;
+
+    &-socials {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      &__container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+
+    &-stats {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &--top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &--bottom {
+    padding: 1rem 2rem 2rem 1rem;
+    background-color: $background-dark;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    gap: 2rem;
+
+    &--right {
+      display: flex;
+      justify-content: center;
+      width: 31.25rem;
+      background-color: #262939;
+      border-radius: 3rem;
+      height: 20rem;
+
+      &__achievement {
+        padding-bottom: 1.5rem;
+
+        &--first {
+          padding-top: 2.5rem;
+        }
+      }
+
+      &__achievements {
+        &__container {
+          display: flex;
+          justify-content: space-between;
+          gap: 1.5rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &--left {
+      &__container {
+        &-title {
+          border-bottom: 1px solid $primary-light;
+          font-size: 2rem;
+          background-image: url("../../assets/icons/Add\ Icon.svg");
+          background-position-y: center;
+          background-position-x: 61rem;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  &--top {
+    padding: 2rem;
+    margin-left: 10.4375rem;
+    width: calc(100vw - 295px);
+    background-size: cover;
+    background: black;
+    overflow: hidden;
+    background: #c33764;
+    background: -webkit-linear-gradient(
+        rgba(29, 38, 113, 0.8),
+        rgba(195, 55, 100, 0.8)
+      ),
+      url("../../assets/icons/Background\ Profile.svg");
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),
+      url("../../assets/icons/Background\ Profile.svg");
+    padding-top: 3rem;
+
+    &__container {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 65vw;
+
+      &--left {
+        &-user {
+          background-image: url("../../assets/icons/Down\ Arrow.svg");
+          background-repeat: no-repeat;
+          background-position-y: center;
+          background-position-x: 9rem;
+        }
+      }
+
+      &--right {
+        display: flex;
+        align-items: center;
+        color: $primary-light;
+        gap: 1rem;
+      }
+    }
+  }
+}
