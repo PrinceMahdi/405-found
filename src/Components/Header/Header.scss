@@ -1,0 +1,136 @@
+/* --------------- PARTIAL IMPORTS --------------- */
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as bp;
+@use "../../styles/partials/typography" as tp;
+@use "../../styles/partials/mixins" as mx;
+
+.header {
+  &__icon {
+    position: absolute;
+    left: 1.15rem;
+  }
+
+  &__download {
+    &-title {
+      font-size: 12px;
+      color: $primary-light;
+    }
+  }
+
+  &--bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    gap: 5px;
+    border-top: 1px solid $primary-light;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__logo {
+    color: $primary-light;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+  }
+  &__bar {
+    height: 1.8125rem;
+    background-color: $primary-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
+  }
+
+  .bar {
+    position: static;
+  }
+
+  .navi {
+    height: 97%;
+  }
+
+  .header__nav-item:nth-child(1) {
+    margin-top: 3rem;
+  }
+
+  .noi {
+    display: flex;
+    align-items: center;
+    color: $primary-light;
+    border-left: 3px solid $background-dark;
+    padding: 0.7rem 1rem;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .header__nav-item:nth-child(2),
+  .header__nav-item:nth-child(3) {
+    gap: 1.25rem;
+  }
+
+  &__nav {
+    &-icon {
+      &__apex {
+        width: 2.5rem;
+      }
+      &__fifa {
+        width: 2.5rem;
+      }
+    }
+    &-title {
+      padding: 2.5rem 1rem 1rem 1rem;
+      color: $primary-light;
+      font-size: 0.9375rem;
+    }
+    &-menu {
+      width: 10.4375rem;
+      height: 100%;
+      background-color: $background-dark;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      color: $primary-light;
+      border-left: 3px solid $background-dark;
+      padding: 0.7rem 1rem;
+      gap: 1rem;
+      &__apex {
+        font-size: 0.8125rem;
+        gap: 0.75rem;
+      }
+      &__fifa {
+        font-size: 0.8125rem;
+        gap: 0.75rem;
+      }
+
+      &__container {
+        width: 100%;
+      }
+      &--active {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-left: 3px solid $primary-light;
+
+        &__apex {
+          background-color: rgba(255, 255, 255, 0.2);
+          border-left: 3px solid $primary-light;
+          font-size: 0.8125rem;
+          gap: 0.75rem;
+        }
+        &__fifa {
+          background-color: rgba(255, 255, 255, 0.2);
+          border-left: 3px solid $primary-light;
+          font-size: 0.8125rem;
+          gap: 0.75rem;
+        }
+      }
+    }
+  }
+}

@@ -17,35 +17,35 @@
   }
 }
 
-/* ------------- MIXIN FOR BUTTON STYLING ------------- */
+/* -------------- MIXIN FOR BUTTON STYLING -------------- */
 // Primary Button
 @mixin btn-primary {
   color: $primary-light;
-  background-color: $primary-dark;
-  border: 1px solid $primary-dark;
-  border-radius: 0.25rem;
+  background-color: $primary-semi-light;
+  border: 1px solid $primary-semi-light;
+  border-radius: 0.375rem;
   transition: 0.2s ease;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.0625rem;
   cursor: pointer;
 }
 // Primary Button Hover
 @mixin btn-primary-hover {
-  color: $primary-dark;
-  border: 1px solid $primary-dark;
-  background-color: $primary-light;
-  border-radius: 0.25rem;
-  transition: 0.3s ease;
-  padding: 0.5rem 1.5rem;
+  color: $primary-light;
+  background-color: #3a74f3;
+  border: 1px solid #3a74f3;
+  border-radius: 0.375rem;
+  transition: 0.2s ease;
+  padding: 0.5rem 1.0625rem;
   cursor: pointer;
 }
 // Secondary Button
 @mixin btn-secondary {
-  color: $primary-dark;
-  border: 1px solid $primary-dark;
-  background-color: $primary-light;
-  border-radius: 0.25rem;
-  transition: 0.3s ease;
-  padding: 0.5rem 1.5rem;
+  color: $primary-light;
+  background-color: $primary-semi-light;
+  border: 1px solid $primary-semi-light;
+  border-radius: 0.375rem;
+  transition: 0.2s ease;
+  padding: 0.5rem 1.0625rem;
   cursor: pointer;
 }
 // Secondary Button Hover
