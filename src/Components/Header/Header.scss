@@ -31,6 +31,7 @@
       background-color: $background-dark;
       display: flex;
       flex-direction: column;
+      position: fixed;
     }
     &-item {
       display: flex;

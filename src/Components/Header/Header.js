@@ -1,6 +1,7 @@
 import "./Header.scss";
 import { NavLink, Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Home from "../../assets/icons/Home.svg";
 
 const Header = () => {
   return (
@@ -18,7 +19,7 @@ const Header = () => {
               : "header__nav-item"
           }
         >
-          <RxHamburgerMenu color="white" size={20} />
+          <img src={Home} alt="icon" className="header__nav-icon"></img>
           Home
         </NavLink>
         <NavLink
