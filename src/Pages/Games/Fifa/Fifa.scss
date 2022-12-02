@@ -10,9 +10,10 @@
   &__button {
     @include mx.btn-primary;
     position: absolute;
-    left: 32.5rem;
-    top: 36.375rem;
-    padding: 11px 39px;
+    left: 32.7rem;
+    top: 36.6rem;
+    font-size: 1rem;
+    padding: 10px 39px;
     min-width: 6.5625rem;
     min-height: 40px;
     &:hover {
