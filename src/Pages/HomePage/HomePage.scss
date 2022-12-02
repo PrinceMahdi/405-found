@@ -8,8 +8,25 @@
 
 
 .main {
-    background: #343647;
+    background: #181B2A;
     margin-left: 11rem;
     margin-top: 1rem;
-    width: 100wv;
+    width: 100%;
+    display: flex;
+
+}  
+    
+.main-top {
+    &__hero {
+        width: 46.5rem;
+        height: 24.8125rem;
+    }
+}
+
+.search {
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 3.75rem;
 }
