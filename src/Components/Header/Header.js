@@ -5,6 +5,8 @@ import Home from "../../assets/icons/Home.svg";
 import Browser from "../../assets/icons/Browse.svg";
 import Collection from "../../assets/icons/Collection.svg";
 import Download from "../../assets/icons/arrow.down.to.line.alt.svg";
+import Apex from "../../assets/images/2x/Apex Icon Left.png";
+import Fifa from "../../assets/images/2x/Fifa Icon Left.png";
 
 const Header = () => {
   return (
@@ -52,22 +54,26 @@ const Header = () => {
           to={"/games/fifa"}
           className={(navData) =>
             navData.isActive
-              ? "header__nav-item header__nav-item--active"
-              : "header__nav-item"
+              ? "header__nav-item header__nav-item--active__fifa"
+              : "header__nav-item header__nav-item__fifa"
           }
         >
-          <img src={Collection} alt="icon" className="header__nav-icon"></img>
+          <img src={Fifa} alt="icon" className="header__nav-icon__fifa"></img>
           FIFA 23
         </NavLink>
         <NavLink
           to={"/games/apex-legends"}
           className={(navData) =>
             navData.isActive
-              ? "header__nav-item header__nav-item--active"
-              : "header__nav-item"
+              ? "header__nav-item header__nav-item--active__apex"
+              : "header__nav-item header__nav-item__apex"
           }
         >
-          <img src={Collection} alt="icon" className="header__nav-icon"></img>
+          <img
+            src={Apex}
+            alt="icon"
+            className="header__nav-icon header__nav-icon__apex"
+          ></img>
           APEX Legends
         </NavLink>
         <div className="header--bottom">
