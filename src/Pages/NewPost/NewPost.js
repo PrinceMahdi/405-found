@@ -3,7 +3,7 @@ import { BsSearch } from "react-icons/bs";
 import Back from "../../assets/icons/Back.svg";
 import BackOne from "../../assets/icons/BackOne.svg";
 import Smile from "../../assets/icons/PPI.svg";
-import Video from "../../assets/images/FifaVideo.mp4";
+import Video from "../../assets/videos/Fifa Highlight.mp4";
 import Twt from "../../assets/icons/Twitch.svg";
 import You from "../../assets/icons/Youtube.svg";
 import Facebook from "../../assets/icons/Facebook.svg";
@@ -63,19 +63,12 @@ const NewPost = () => {
                   className="form-input"
                   defaultValue="Crazy long range FIFA goal!"
                 ></input>
-                <p className="form-input__legend">
-                  no more than 100 characters{" "}
-                </p>
                 <input
                   placeholder="Write a caption..."
                   className="form-input"
                   defaultValue="I scored this banger of a goal in FIFA."
                 ></input>
-                <p className="form-input__legend">
-                  no more than 250 characters
-                </p>
                 <input placeholder="Tags: #fifa" className="form-input"></input>
-                <p className="form-input__legend">no more than 10 characters</p>
                 <div className="form-button">
                   <button className="form-input__button">SAVE IN DRAFT</button>
                   <Link to="/profile">
