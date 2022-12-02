@@ -77,6 +77,7 @@
 
       &__achievement {
         padding-bottom: 1.5rem;
+        font-size: 1.5rem;
 
         &--first {
           padding-top: 2.5rem;
@@ -123,6 +124,7 @@
     background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),
       url("../../assets/icons/Background\ Profile.svg");
     padding-top: 3rem;
+    padding-right: 5rem;
 
     &__container {
       display: flex;
