@@ -3,12 +3,10 @@
 @use "../../../styles/partials/breakpoints" as bp;
 @use "../../../styles/partials/typography" as tp;
 @use "../../../styles/partials/mixins" as mx;
-
 .fifa {
   margin-left: 10.4375rem;
   margin-top: -50px;
   position: relative;
-
   &__button {
     @include mx.btn-primary;
     position: absolute;
@@ -17,7 +15,6 @@
     padding: 11px 39px;
     min-width: 6.5625rem;
     min-height: 40px;
-
     &:hover {
       padding: 11px 39px;
       min-width: 6.5625rem;
@@ -31,11 +28,100 @@
       cursor: pointer;
     }
   }
-
   &__home {
     &-img {
       width: 86%;
       margin-top: 3rem;
     }
   }
+}
+
+.videoPopUp {
+  display: none;
+  padding: 2rem;
+  position: absolute;
+  width: 31.625rem;
+  height: 28.813rem;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $background-dark;
+  border-radius: 0.625rem;
+  // display: flex;
+  flex-direction: column;
+  z-index: 999;
+  &__close-icon {
+    display: flex;
+    position: absolute;
+    right: -3%;
+    top: -3%;
+    width: 2.563rem;
+    height: 2.563rem;
+    &-close-iconWrapper {
+      padding-right: 1rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  &-video-container {
+    width: 28rem;
+    height: 16.932rem;
+  }
+  &__text {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+    &-image {
+      gap: 0.5rem;
+    }
+    &-imageIcon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.75rem;
+    }
+  }
+  &__btn {
+    width: 9.063rem;
+    height: 2rem;
+    border-radius: 0.375px;
+    font-size: 0.813rem;
+    line-height: 1rem;
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 0.625rem;
+      margin-top: 3rem;
+    }
+    &--save {
+      border: 1px solid $primary-semi-light;
+      color: $primary-light;
+      background-color: $background-dark;
+      border-radius: 0.375rem;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+    &--save:hover {
+      @include mx.btn-primary-hover;
+    }
+    &--start {
+      background-color: $primary-semi-light;
+      color: $primary-light;
+      border: 1px solid $primary-semi-light;
+      border-radius: 0.375rem;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+    &--start:hover {
+      @include mx.btn-secondary-hover;
+    }
+  }
+}
+video {
+  border-radius: 0.625rem;
 }

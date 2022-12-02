@@ -9,7 +9,6 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 import Profile from "./Pages/Profile/Profile";
 import NewPost from "./Pages/NewPost/NewPost";
 
-
 const App = () => {
   return (
     <>
