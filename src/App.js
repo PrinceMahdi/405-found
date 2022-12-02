@@ -5,12 +5,14 @@ import HomePage from "./Pages/HomePage/HomePage";
 import Browse from "./Pages/Browse/Browse";
 import MyCollection from "./Pages/MyCollection/MyCollection";
 import Fifa from "./Pages/Games/Fifa/Fifa";
+import Sidebar from "./Components/Sidebar/Sidebar";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Header />
+        <Sidebar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/browse" element={<Browse />} />
