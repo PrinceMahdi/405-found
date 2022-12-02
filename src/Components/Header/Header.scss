@@ -12,7 +12,7 @@
 
   &__download {
     &-title {
-      font-size: 13px;
+      font-size: 12px;
       color: $primary-light;
     }
   }
@@ -26,6 +26,7 @@
     border-top: 1px solid $primary-light;
     position: absolute;
     bottom: 0;
+    width: 100%;
     cursor: pointer;
   }
 
@@ -53,6 +54,14 @@
   }
 
   &__nav {
+    &-icon {
+      &__apex {
+        width: 2.5rem;
+      }
+      &__fifa {
+        width: 2.5rem;
+      }
+    }
     &-title {
       padding: 2.5rem 1rem 1rem 1rem;
       color: $primary-light;
@@ -73,6 +82,14 @@
       border-left: 3px solid $background-dark;
       padding: 0.7rem 1rem;
       gap: 1rem;
+      &__apex {
+        font-size: 0.8125rem;
+        gap: 0.75rem;
+      }
+      &__fifa {
+        font-size: 0.8125rem;
+        gap: 0.75rem;
+      }
 
       &__container {
         width: 100%;
@@ -80,6 +97,19 @@
       &--active {
         background-color: rgba(255, 255, 255, 0.2);
         border-left: 3px solid $primary-light;
+
+        &__apex {
+          background-color: rgba(255, 255, 255, 0.2);
+          border-left: 3px solid $primary-light;
+          font-size: 0.8125rem;
+          gap: 0.75rem;
+        }
+        &__fifa {
+          background-color: rgba(255, 255, 255, 0.2);
+          border-left: 3px solid $primary-light;
+          font-size: 0.8125rem;
+          gap: 0.75rem;
+        }
       }
     }
   }
