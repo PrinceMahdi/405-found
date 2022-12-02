@@ -1,4 +1,7 @@
 import "./Sidebar.scss";
+import {profileIcon} from "../../assets/icons/";
+import {profileplus} from "../../assets/icons/";
+import {userActive} from "../../assets/icons/";
 
 
 
@@ -55,17 +58,17 @@ const Sidebar = () => {
             <div className="friends__header">
                 <div className="friends__header-contentContainer">
                     <span className="friends__header-content">Friends</span>
-                    <span className="frinds">1/8</span>
+                    <span className="friends__header-content">1/8</span>
                 </div>
-                <img />
+                <img className="friends__header-icon" alt="profile-icon"/>
             </div>
-            <div>
-                {friendsList.map((friend) => (
-                    <>
-                <img src={friend.img}/>
-                <p>{friend.name}</p>
-                </>
-            ))}
+            <div className="friends__list">
+                {friendsList.map((friend,key) => (
+                     <div className="friends__listItem" key={key}>
+                        <img src={friend.img} className="friends__listItem-image"/>
+                        <p className="friends__listItem-name">{friend.name}</p>
+                    </div>
+                ))}
             </div>
         </div>
     </div>
