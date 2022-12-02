@@ -53,10 +53,10 @@ const Sidebar = () => {
         }
       >
         <img src={profileIcon} alt="icon" className="sidebar-icon"></img>
-        Browse
+        Profile
       </NavLink>
       <div className="sidebar__user">
-        <img className="sidebar__user-image" alt="user image" src={userImage} />
+        <img className="sidebar__user-image" alt="user image" src={userActive} />
         <p className="sidebar__user-name">mrwaffles55</p>
         <img
           className="sidebar__user-downArrow"
