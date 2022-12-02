@@ -4,17 +4,17 @@
 @use "../../styles/partials/typography" as tp;
 @use "../../styles/partials/mixins" as mx;
 
-
 main {
     display: flex;
     margin: auto 0;
 }
 
 .main {
-    background: #1D2033;
+    background: #1d2033;
     padding: 0 11rem;
     display: inline-block;
     font-family: "Myriad";
+    height: 115vh;
 
     &__hero {
         position: relative;
@@ -23,7 +23,6 @@ main {
         text-align: right;
         align-items: center;
     }
-
 
     &-top {
         position: relative;
@@ -36,18 +35,15 @@ main {
             display: flex;
         }
 
-
         &__button-large {
-
-            @include mx.btn-primary
+            @include mx.btn-primary;
         }
 
         &__button-large:hover {
-            @include mx.btn-primary-hover
+            @include mx.btn-primary-hover;
         }
 
         &__button-small {
-
             color: $primary-light;
             background-color: $primary-semi-light;
             border: 1px solid $primary-semi-light;
@@ -58,10 +54,8 @@ main {
         }
 
         &__button-small:hover {
-            @include mx.btn-secondary-hover
+            @include mx.btn-secondary-hover;
         }
-
-
 
         &__image {
             width: 55rem;
@@ -72,13 +66,13 @@ main {
         &__box {
             width: 312px;
             margin-top: 6.875rem;
-            color: #FFFFFF;
+            color: #ffffff;
             position: absolute;
             top: 1.25rem;
             left: 20px;
 
             &-header {
-                color: #FFFFFF;
+                color: #ffffff;
                 font-size: 2.1875rem;
                 line-height: 2.5rem;
                 font-weight: 700;
@@ -86,17 +80,16 @@ main {
             }
 
             &-sub {
-                color: #FFFFFF;
+                color: #ffffff;
                 margin: 1.5rem 0;
             }
 
             &-text {
-                color: #FFFFFF;
-                margin-bottom: .875rem;
-                font-size: .875rem;
+                color: #ffffff;
+                margin-bottom: 0.875rem;
+                font-size: 0.875rem;
             }
         }
-
 
         &__search {
             display: flex;
@@ -113,7 +106,7 @@ main {
             &-image {
                 position: absolute;
                 left: 3.825rem;
-                padding: .125rem;
+                padding: 0.125rem;
             }
 
             &-right {
@@ -121,7 +114,7 @@ main {
             }
 
             &-arrow {
-                margin-right: .375rem;
+                margin-right: 0.375rem;
             }
 
             &-placeholder {
@@ -132,11 +125,10 @@ main {
                 margin-right: 3.75rem;
                 background: #d7d5dd;
                 border-radius: 5px;
-                border: #9F9DA5;
+                border: #9f9da5;
                 width: 13.25rem;
-                margin-left: .8125rem;
+                margin-left: 0.8125rem;
             }
-
         }
     }
 
@@ -151,7 +143,7 @@ main {
 
             &-header,
             &-text {
-                color: #FFFFFF;
+                color: #ffffff;
             }
 
             &-header {
@@ -162,12 +154,15 @@ main {
             &-text {
                 font-size: 0.875rem;
             }
+
+            &-image:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+            
         }
     }
-
-
 }
-
 
 ::placeholder {
     color: #6b6a6d;
