@@ -1,9 +1,10 @@
 import "./HomePage.scss";
 import Hero from "../../assets/images/Background.png";
 import { BsSearch } from "react-icons/bs";
-// import { Back } from "../../assets/icons/Back.svg";
+import Back from "../../assets/icons/Back.svg";
 import Apex from "../../assets/images/1x/Apex Picture.png";
 import Fifa from "../../assets/images/1x/Fifa bottom Picture.png";
+import Sims from "../../assets/images/1x/Sims bottom Picture.png";
 
 const HomePage = () => {
   return (
@@ -16,7 +17,7 @@ const HomePage = () => {
           </div>
 
           <div className="main-top__search">
-            {/* <img>{Back}</img> */}
+            <img src={Back}></img>
             <input
               placeholder="Search"
               className="main-top__search-placeholder"
@@ -52,7 +53,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="main-bottom__box">
-            <img className="main-bottom__box-image" src={Apex}></img>
+            <img className="main-bottom__box-image" src={Sims}></img>
             <h3 className="main-bottom__box-header">A new season begins </h3>
             <p className="main-bottom__box-text">
               Conjure your inner strength in Apex Legends: Eclipse
