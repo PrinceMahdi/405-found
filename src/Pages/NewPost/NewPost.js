@@ -3,7 +3,7 @@ import { BsSearch } from "react-icons/bs";
 import Back from "../../assets/icons/Back.svg";
 import BackOne from "../../assets/icons/BackOne.svg";
 import Smile from "../../assets/icons/PPI.svg";
-import Video from "../../assets/images/FifaVideo.mp4";
+import Video from "../../assets/videos/Fifa Highlight.mp4";
 import Twt from "../../assets/icons/Twitch.svg";
 import You from "../../assets/icons/Youtube.svg";
 import Facebook from "../../assets/icons/Facebook.svg";
